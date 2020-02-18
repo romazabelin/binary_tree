@@ -11,5 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-});
+Route::resource('binaries', 'BinaryController')->names([
+    'index' => 'binary.index',
+    'store' => 'binary.store'
+]);
+
+Route::get('/', ['uses' => 'BinaryController@index']);

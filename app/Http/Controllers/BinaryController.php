@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\BinaryStoreService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Lang;
 
 class BinaryController extends Controller
 {
@@ -13,7 +15,9 @@ class BinaryController extends Controller
      */
     public function index()
     {
+        $parentIds = (new BinaryStoreService())->getParentIds();
 
+        return view('binaries.index', compact('parentIds'));
     }
 
     /**
@@ -34,7 +38,11 @@ class BinaryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input   = $request->all();
+        $res     = (new BinaryStoreService())->store($input['parent_id'], $input['position']);
+        $message = ($res) ? Lang::get('translations.form.success') : Lang::get('translations.form.exists');
+
+        return redirect()->back()->with('status', $message);
     }
 
     /**

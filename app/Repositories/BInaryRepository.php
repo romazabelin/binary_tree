@@ -1,0 +1,67 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: roma
+ * Date: 2/18/20
+ * Time: 8:22 PM
+ */
+
+namespace App\Repositories;
+
+
+use App\Binary;
+
+class BinaryRepository
+{
+    /**
+     * @return array
+     */
+    public function getParentIds()
+    {
+        return Binary::all()->pluck('id', 'id')->toArray();
+    }
+
+    /**
+     * @param int $parentId
+     * @param int $position
+     * @return mixed
+     */
+    public function check(int $parentId, int $position)
+    {
+        return Binary::where([
+            ['parent_id', $parentId],
+            ['position', $position]
+        ])->exists();
+    }
+
+    /**
+     * @param int $parentId
+     * @param int $position
+     * @return mixed
+     */
+    public function store(int $parentId, int $position)
+    {
+        return Binary::create([
+            'parent_id' => $parentId,
+            'position'  => $position
+        ]);
+    }
+
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function getById(int $id)
+    {
+        return Binary::find($id);
+    }
+
+    /**
+     * @param int $id
+     * @param array $data
+     */
+    public function update(int $id, array $data)
+    {
+        Binary::where('id', $id)->update($data);
+    }
+} 

@@ -18,8 +18,8 @@ class CreateBinariesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('parent_id');
             $table->integer('position');
-            $table->text('path', 12288);
-            $table->integer('level');
+            $table->text('path', 12288)->nullable();
+            $table->integer('level')->nullable();
             $table->timestamps();
         });
 
@@ -27,8 +27,8 @@ class CreateBinariesTable extends Migration
             'id'        => 1,
             'parent_id' => 0,
             'position'  => 0,
-            'path'      => '',
-            'level'    => 0
+            'path'      => '1',
+            'level'    => 1
         ]);
     }
 
