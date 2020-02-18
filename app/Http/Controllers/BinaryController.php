@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\BinaryManageService;
 use App\Services\BinaryStoreService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Lang;
@@ -15,6 +16,9 @@ class BinaryController extends Controller
      */
     public function index()
     {
+        $binaryManageService = new BinaryManageService();
+        $binaryManageService->autoFill(3);
+        exit;
         $parentIds = (new BinaryStoreService())->getParentIds();
 
         return view('binaries.index', compact('parentIds'));

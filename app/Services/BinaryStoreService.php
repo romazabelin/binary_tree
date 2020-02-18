@@ -21,7 +21,10 @@ class BinaryStoreService
     {
         $this->binaryRepository = new BinaryRepository();
     }
+
     /**
+     * get list parent ids
+     *
      * @return array
      */
     public function getParentIds()
@@ -30,6 +33,8 @@ class BinaryStoreService
     }
 
     /**
+     * store binary in db
+     *
      * @param int $parentId
      * @param int $position
      * @return mixed
@@ -49,7 +54,6 @@ class BinaryStoreService
             //get binary path and revert
             $reversePath = array_reverse($this->path);
             $level       = count($reversePath);
-
             $path        = implode('.', $reversePath);
 
             $this->binaryRepository->update($binary->id, ['path' => $path, 'level' => $level]);
@@ -59,6 +63,8 @@ class BinaryStoreService
     }
 
     /**
+     * get path for binary
+     *
      * @param $id
      */
     protected function getPath($id)

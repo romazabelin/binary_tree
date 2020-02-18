@@ -64,4 +64,31 @@ class BinaryRepository
     {
         Binary::where('id', $id)->update($data);
     }
+
+
+    /*
+     * @return Binary
+     */
+    public function getMaxLevel()
+    {
+        return Binary::max('level');
+    }
+
+    /**
+     * @param int $level
+     * @return mixed
+     */
+    public function getByLevel(int $level)
+    {
+        return Binary::where('level', $level)->get();
+    }
+
+    /**
+     * @param int $level
+     * @return mixed
+     */
+    public function getCountBinariesByLevel(int $level)
+    {
+        return Binary::where('level', $level)->count();
+    }
 } 
