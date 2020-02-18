@@ -16,12 +16,23 @@ class BinaryController extends Controller
      */
     public function index()
     {
-        $binaryManageService = new BinaryManageService();
-        $binaryManageService->autoFill(3);
-        exit;
         $parentIds = (new BinaryStoreService())->getParentIds();
 
         return view('binaries.index', compact('parentIds'));
+    }
+
+    /**
+     * Auto fill binary tree
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function fill()
+    {
+        $binaryManageService = new BinaryManageService();
+
+        $binaryManageService->autoFill(5);
+
+        return redirect()->back();
     }
 
     /**

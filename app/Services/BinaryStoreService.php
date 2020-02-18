@@ -15,7 +15,11 @@ class BinaryStoreService
 {
     protected $binaryRepository;
 
-    protected $path = [];
+    protected $pathData = [];
+
+    protected $path;
+
+    protected $level;
 
     public function __construct()
     {
@@ -47,16 +51,10 @@ class BinaryStoreService
         if (!$exists) {
             //create binary and get his path
             $binary = $this->binaryRepository->store($parentId, $position);
+
             $this->getPath($binary->id);
-
-            array_unshift($this->path, $binary->id);
-
-            //get binary path and revert
-            $reversePath = array_reverse($this->path);
-            $level       = count($reversePath);
-            $path        = implode('.', $reversePath);
-
-            $this->binaryRepository->update($binary->id, ['path' => $path, 'level' => $level]);
+            $this->prepareData($binary->id);
+            $this->binaryRepository->update($binary->id, ['path' => $this->path, 'level' => $this->level]);
         }
 
         return !$exists;
@@ -65,15 +63,28 @@ class BinaryStoreService
     /**
      * get path for binary
      *
-     * @param $id
+     * @param int $id
      */
-    protected function getPath($id)
+    protected function getPath(int $id)
     {
         $binary = $this->binaryRepository->getById($id);
 
         if ($binary->parent_id) {
-            array_push($this->path, $binary->parent_id);
+            array_push($this->pathData, $binary->parent_id);
             $this->getPath($binary->parent_id);
         }
+    }
+
+    /**
+     * @param int $id
+     */
+    protected function prepareData(int $id)
+    {
+        array_unshift($this->pathData, $id);
+
+        //get binary path and revert
+        $reversePath = array_reverse($this->pathData);
+        $this->level = count($reversePath);
+        $this->path  = implode('.', $reversePath);
     }
 } 

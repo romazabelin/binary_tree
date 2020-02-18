@@ -37,21 +37,27 @@ class BinaryManageService
             $parents       = $this->binaryRepository->getByLevel($currentLevel - 1);
 
             //echo $currentLevel . ' ' . $expectedCount . ' ' . $currentCount . '!!!<br/>';
-
             while ($currentCount < $expectedCount) {
                 foreach($parents as $item) {
-                    $id1 = $this->binaryRepository->store($item->id, 1);
-                    $id2 = $this->binaryRepository->store($item->id, 2);
+                    $exists1 = $this->binaryRepository->check($item->id, 1);
+                    $exists2 = $this->binaryRepository->check($item->id, 2);
 
-                    $this->binaryRepository->update($id1->id, ['level' => $level]);
-                    $this->binaryRepository->update($id2->id, ['level' => $level]);
+                    if (!$exists1) {
+                        $id1 = $this->binaryRepository->store($item->id, 1);
+                        $this->binaryRepository->update($id1->id, ['level' => $currentLevel]);
+                    }
+
+                    if (!$exists2) {
+                        $id2 = $this->binaryRepository->store($item->id, 2);
+                        $this->binaryRepository->update($id2->id, ['level' => $currentLevel]);
+                    }
                 }
 
                 $currentCount  = $this->binaryRepository->getCountBinariesByLevel($currentLevel);
-                echo $currentCount . ' ' . $expectedCount . ' ' . $currentLevel . '<br/>';
-                exit;
+//                echo $currentCount . ' ' . $expectedCount . ' ' . $currentLevel . '<br/>';
+//                exit;
             }
-            //echo '<br/>';
+
             $currentLevel++;
         }
     }

@@ -17,3 +17,5 @@ Route::resource('binaries', 'BinaryController')->names([
 ]);
 
 Route::get('/', ['uses' => 'BinaryController@index']);
+
+Route::get('/fill', ['uses' => 'BinaryController@fill', 'as' => 'binary.fill']);

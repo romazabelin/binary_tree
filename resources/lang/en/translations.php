@@ -5,6 +5,7 @@ return [
         'position'  => 'Position',
         'save'      => 'Save',
         'success'   => 'Success',
-        'exists'    => 'Already exists'
+        'exists'    => 'Already exists',
+        'fill'      => 'Fill binary tree'
     ]
 ];

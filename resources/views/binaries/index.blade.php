@@ -18,4 +18,7 @@
     </div>
     @endif
 </div>
+<div>
+    {{ Html::link(route('binary.fill'), trans('translations.form.fill')) }}
+</div>
 {{ Form::close() }}
