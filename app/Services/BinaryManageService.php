@@ -31,9 +31,9 @@ class BinaryManageService extends BinaryDataService
     {
         //reset db, remove all except root element
         $this->clearData();
-        //TODO:: pass $level, it is can be done with interface
-        $this->addLeftBranch(1, 1, 2, 4);
-        $this->addRightBranch(1, 2, 2, 4);
+        //TODO::it is can be done with interface
+        $this->addLeftBranch(1, 1, 2, $level);
+        $this->addRightBranch(1, 2, 2, $level);
     }
 
     /**
@@ -47,27 +47,40 @@ class BinaryManageService extends BinaryDataService
     protected function addLeftBranch(int $parentId, int $position, int $currentLevel, int $expectedLevel)
     {
         //except 0 parent id and do not start right branch
-        if ($parentId && !($parentId == 1 && $position == 2)) {
-            $binary = $this->binaryRepository->store($parentId, $position);
+        if ($parentId && !($parentId == 1 && $position == 2) && ($parentId != 1 || ($parentId == 1 && !$this->binaryRepository->check($parentId, 1)))) {
+            if ($this->binaryRepository->getCountByParent($parentId) != 2) {
+                $binary = $this->binaryRepository->store($parentId, $position);
 
-            $this->getPath($binary->id);
-            $this->prepareData($binary->id);
-            $this->binaryRepository->update($binary->id, ['path' => $this->path, 'level' => $this->level]);
-            $this->unsetData();
+                $this->getPath($binary->id);
+                $this->prepareData($binary->id);
+                $this->binaryRepository->update($binary->id, ['path' => $this->path, 'level' => $this->level]);
 
-            if ($currentLevel <= $expectedLevel) {
-                $this->addLeftBranch($binary->id, $position, ++$currentLevel, $expectedLevel);
+                $binaryLevel = $this->level;
+                $newParentId = $binary->id;
+
+                $this->unsetData();
+
+                $pos = 1;
+            } else {
+                $binary      = $this->binaryRepository->getById($parentId);
+                $binaryLevel = $binary->level;
+                $newParentId = $binary->parent_id;
+                $pos         = 2;
+            }
+
+            if ($binaryLevel < $expectedLevel) {
+                $this->addLeftBranch($newParentId, $pos, $binaryLevel, $expectedLevel);
             } else {
                 //check if we have 2 elements with parent id
                 if ($this->binaryRepository->getCountByParent($binary->parent_id) == 2) {
-                    $binary = $this->binaryRepository->getById($parentId);
-                    $temp = $binary->parent_id;
+                    $binaryParent = $this->binaryRepository->getById($parentId);
+                    $newParentId         = $binaryParent->parent_id;
                 } else {
-                    $temp = $parentId;
+                    $newParentId = $parentId;
                 }
 
                 //start to add element in another side (recursion to top of tree)
-                $this->addLeftBranch($temp, 2, ++$currentLevel, $expectedLevel);
+                $this->addLeftBranch($newParentId, 2, $binaryLevel, $expectedLevel);
             }
         } else
             return false;
@@ -84,27 +97,40 @@ class BinaryManageService extends BinaryDataService
     protected function addRightBranch(int $parentId, int $position, int $currentLevel, $expectedLevel)
     {
         //except 0 parent id and do not start left branch
-        if ($parentId && !($parentId == 1 && $position == 1)) {
-            $binary = $this->binaryRepository->store($parentId, $position);
+        if ($parentId && !($parentId == 1 && $position == 1) && ($parentId != 1 || ($parentId == 1 && !$this->binaryRepository->check($parentId, 2)))) {
+            if ($this->binaryRepository->getCountByParent($parentId) != 2) {
+                $binary = $this->binaryRepository->store($parentId, $position);
 
-            $this->getPath($binary->id);
-            $this->prepareData($binary->id);
-            $this->binaryRepository->update($binary->id, ['path' => $this->path, 'level' => $this->level]);
-            $this->unsetData();
+                $this->getPath($binary->id);
+                $this->prepareData($binary->id);
+                $this->binaryRepository->update($binary->id, ['path' => $this->path, 'level' => $this->level]);
 
-            if ($currentLevel <= $expectedLevel) {
-                $this->addRightBranch($binary->id, $position, ++$currentLevel, $expectedLevel);
+                $binaryLevel = $this->level;
+                $newParentId = $binary->id;
+
+                $this->unsetData();
+
+                $pos = 2;
+            } else {
+                $binary      = $this->binaryRepository->getById($parentId);
+                $binaryLevel = $binary->level;
+                $newParentId = $binary->parent_id;
+                $pos         = 1;
+            }
+
+            if ($binaryLevel < $expectedLevel) {
+                $this->addRightBranch($newParentId, $pos, $binaryLevel, $expectedLevel);
             } else {
                 //check if we have 2 elements with parent id
                 if ($this->binaryRepository->getCountByParent($binary->parent_id) == 2) {
-                    $binary = $this->binaryRepository->getById($parentId);
-                    $temp = $binary->parent_id;
+                    $binaryParent = $this->binaryRepository->getById($parentId);
+                    $newParentId         = $binaryParent->parent_id;
                 } else {
-                    $temp = $parentId;
+                    $newParentId = $parentId;
                 }
 
                 //start to add element in another side (recursion to top of tree)
-                $this->addRightBranch($temp, 1, ++$currentLevel, $expectedLevel);
+                $this->addRightBranch($newParentId, 1, $binaryLevel, $expectedLevel);
             }
         } else
             return false;
