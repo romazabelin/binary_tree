@@ -91,4 +91,21 @@ class BinaryRepository
     {
         return Binary::where('level', $level)->count();
     }
+
+    /**
+     * @param int $parentId
+     * @return mixed
+     */
+    public function getCountByParent(int $parentId)
+    {
+        return Binary::where('parent_id', $parentId)->count();
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotalCount()
+    {
+        return Binary::all()->count();
+    }
 } 
