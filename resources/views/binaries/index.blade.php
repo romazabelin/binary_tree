@@ -21,4 +21,7 @@
 <div>
     {{ Html::link(route('binary.fill'), trans('translations.form.fill')) }}
 </div>
+<div>
+    {{ Html::link(route('binary.reset'), trans('translations.form.reset')) }}
+</div>
 {{ Form::close() }}

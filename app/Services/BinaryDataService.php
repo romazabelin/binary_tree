@@ -63,4 +63,12 @@ class BinaryDataService
         $this->path = '';
         $this->pathData = [];
     }
+
+    /**
+     * reset db, remove all except root element
+     */
+    protected function resetData()
+    {
+        $this->binaryRepository->resetData();
+    }
 } 

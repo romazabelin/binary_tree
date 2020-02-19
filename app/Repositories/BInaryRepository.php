@@ -108,4 +108,13 @@ class BinaryRepository
     {
         return Binary::all()->count();
     }
+
+    /**
+     * reset db, remove all except root element
+     *
+     */
+    public function resetData()
+    {
+        Binary::where('id', '<>', '1')->delete();
+    }
 } 

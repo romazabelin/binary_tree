@@ -35,6 +35,14 @@ class BinaryController extends Controller
         return redirect()->back();
     }
 
+    public function reset()
+    {
+        $binaryManageService = new BinaryManageService();
+        $binaryManageService->clearData();
+
+        return redirect()->back();
+    }
+
     /**
      * Show the form for creating a new resource.
      *

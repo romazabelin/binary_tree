@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59721999-6ba8-40fa-9408-e6ac88a8215b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Services/BinaryDataService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/BinaryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/BinaryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/BinaryDataService.php" afterPath="$PROJECT_DIR$/app/Services/BinaryDataService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/BinaryManageService.php" afterPath="$PROJECT_DIR$/app/Services/BinaryManageService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/BinaryStoreService.php" afterPath="$PROJECT_DIR$/app/Services/BinaryStoreService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/binary_tree.iml" afterPath="$PROJECT_DIR$/.idea/binary_tree.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/binaries/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/binaries/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/translations.php" afterPath="$PROJECT_DIR$/resources/lang/en/translations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="binary_tree.iws" />
@@ -32,7 +34,7 @@
       <file leaf-file-name="web.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459">
+            <state line="22" column="79" selection-start="731" selection-end="731" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
@@ -41,7 +43,16 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="72" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="493">
+            <state line="24" column="18" selection-start="689" selection-end="689" vertical-scroll-proportion="-12.653846" vertical-offset="79" max-vertical-offset="544">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="translations.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/en/translations.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="32" selection-start="283" selection-end="283" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -50,7 +61,7 @@
       <file leaf-file-name="BinaryController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BinaryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="40" selection-start="733" selection-end="733" vertical-scroll-proportion="0.7801932" vertical-offset="170" max-vertical-offset="1870">
+            <state line="42" column="34" selection-start="949" selection-end="949" vertical-scroll-proportion="0.8623188" vertical-offset="306" max-vertical-offset="2006">
               <folding />
             </state>
           </provider>
@@ -59,18 +70,7 @@
       <file leaf-file-name="BinaryManageService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Services/BinaryManageService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="32" selection-start="247" selection-end="247" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="2465">
-              <folding>
-                <element signature="e#6#85#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinaryStoreService.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/BinaryStoreService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="5" selection-start="568" selection-end="568" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="833">
+            <state line="21" column="18" selection-start="334" selection-end="334" vertical-scroll-proportion="-3.1960785" vertical-offset="109" max-vertical-offset="2567">
               <folding />
             </state>
           </provider>
@@ -79,7 +79,7 @@
       <file leaf-file-name="BinaryDataService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Services/BinaryDataService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="17" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-14.615385" vertical-offset="504" max-vertical-offset="1122">
+            <state line="69" column="23" selection-start="1310" selection-end="1310" vertical-scroll-proportion="-9.384615" vertical-offset="844" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -103,14 +103,14 @@
         <option value="$PROJECT_DIR$/app/Repositories/BInaryRepository.php" />
         <option value="$PROJECT_DIR$/app/Binary.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_18_173445_create_binaries_table.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/lang/en/translations.php" />
-        <option value="$PROJECT_DIR$/resources/views/binaries/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BinaryController.php" />
         <option value="$PROJECT_DIR$/app/Services/BinaryStoreService.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/BinaryRepository.php" />
-        <option value="$PROJECT_DIR$/app/Services/BinaryManageService.php" />
         <option value="$PROJECT_DIR$/app/Services/BinaryDataService.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/BinaryRepository.php" />
+        <option value="$PROJECT_DIR$/resources/views/binaries/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/translations.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Services/BinaryManageService.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BinaryController.php" />
       </list>
     </option>
   </component>
@@ -135,7 +135,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -146,187 +146,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binaries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="en" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binary_tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repositories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="options.lastSelected" value="File.Encoding" />
@@ -396,11 +216,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -420,6 +240,90 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="72" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BinaryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="45" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryManageService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryStoreService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="5" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryDataService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="17" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="72" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BinaryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="40" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryManageService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryStoreService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="5" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryDataService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="17" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BinaryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="40" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
@@ -451,9 +355,7 @@
     <entry file="file://$PROJECT_DIR$/app/Services/BinaryManageService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="49" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1003">
-          <folding>
-            <element signature="e#6#85#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -481,63 +383,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Binary.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="66" selection-start="159" selection-end="159" vertical-scroll-proportion="0.33415234" vertical-offset="0" max-vertical-offset="407">
-          <folding />
-        </state>
+        <state line="8" column="66" selection-start="159" selection-end="159" vertical-scroll-proportion="0.33415234" vertical-offset="0" max-vertical-offset="407" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryStoreService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459">
+        <state line="22" column="33" selection-start="351" selection-end="351" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/en/translations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="248" selection-end="248" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="272" />
+        <state line="9" column="32" selection-start="283" selection-end="283" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="72" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="493">
+        <state line="24" column="18" selection-start="689" selection-end="689" vertical-scroll-proportion="-12.653846" vertical-offset="79" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="79" selection-start="731" selection-end="731" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/BinaryRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="20" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-7.9615383" vertical-offset="1340" max-vertical-offset="1887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/BinaryDataService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="17" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-14.615385" vertical-offset="504" max-vertical-offset="1122">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/BinaryStoreService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="5" selection-start="568" selection-end="568" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="833">
+        <state line="115" column="20" selection-start="2076" selection-end="2076" vertical-scroll-proportion="0.65217394" vertical-offset="1600" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/BinaryManageService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="32" selection-start="247" selection-end="247" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="2465">
-          <folding>
-            <element signature="e#6#85#0" expanded="true" />
-          </folding>
+        <state line="21" column="18" selection-start="334" selection-end="334" vertical-scroll-proportion="-3.1960785" vertical-offset="109" max-vertical-offset="2567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryDataService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="23" selection-start="1310" selection-end="1310" vertical-scroll-proportion="-9.384615" vertical-offset="844" max-vertical-offset="1258">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BinaryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="40" selection-start="733" selection-end="733" vertical-scroll-proportion="0.7801932" vertical-offset="170" max-vertical-offset="1870">
+        <state line="42" column="34" selection-start="949" selection-end="949" vertical-scroll-proportion="0.8623188" vertical-offset="306" max-vertical-offset="2006">
           <folding />
         </state>
       </provider>

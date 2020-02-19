@@ -6,6 +6,7 @@ return [
         'save'      => 'Save',
         'success'   => 'Success',
         'exists'    => 'Already exists',
-        'fill'      => 'Fill binary tree'
+        'fill'      => 'Fill binary tree',
+        'reset'     => 'Reset DB'
     ]
 ];

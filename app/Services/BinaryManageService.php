@@ -14,13 +14,24 @@ use App\Repositories\BinaryRepository;
 class BinaryManageService extends BinaryDataService
 {
     /**
+     * reset db, remove all except root element
+     *
+     */
+    public function clearData()
+    {
+        $this->resetData();
+    }
+
+    /**
      * auto generate binary tree
      *
      * @param int $level
      */
     public function autoFill(int $level)
     {
-        //TODO:: pass $level
+        //reset db, remove all except root element
+        $this->clearData();
+        //TODO:: pass $level, it is can be done with interface
         $this->addLeftBranch(1, 1, 2, 4);
         $this->addRightBranch(1, 2, 2, 4);
     }
@@ -44,7 +55,7 @@ class BinaryManageService extends BinaryDataService
             $this->binaryRepository->update($binary->id, ['path' => $this->path, 'level' => $this->level]);
             $this->unsetData();
 
-            if ($currentLevel < $expectedLevel) {
+            if ($currentLevel <= $expectedLevel) {
                 $this->addLeftBranch($binary->id, $position, ++$currentLevel, $expectedLevel);
             } else {
                 //check if we have 2 elements with parent id
@@ -81,7 +92,7 @@ class BinaryManageService extends BinaryDataService
             $this->binaryRepository->update($binary->id, ['path' => $this->path, 'level' => $this->level]);
             $this->unsetData();
 
-            if ($currentLevel < $expectedLevel) {
+            if ($currentLevel <= $expectedLevel) {
                 $this->addRightBranch($binary->id, $position, ++$currentLevel, $expectedLevel);
             } else {
                 //check if we have 2 elements with parent id
