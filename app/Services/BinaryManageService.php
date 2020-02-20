@@ -14,6 +14,38 @@ use App\Repositories\BinaryRepository;
 class BinaryManageService extends BinaryDataService
 {
     /**
+     * get above binaries by level
+     *
+     * @param int $id
+     * @return mixed
+     */
+    public function getAboveBinaries(int $id)
+    {
+        if (!$id)
+            return [];
+
+        $binary = $this->binaryRepository->getById($id);
+
+        return $this->binaryRepository->getAboveLevel($binary->level);
+    }
+
+    /**
+     * get under binaries by level
+     *
+     * @param int $id
+     * @return mixed
+     */
+    public function getUnderBinaries(int $id)
+    {
+        if (!$id)
+            return [];
+
+        $binary = $this->binaryRepository->getById($id);
+
+        return $this->binaryRepository->getUnderLevel($binary->level);
+    }
+
+    /**
      * reset db, remove all except root element
      *
      */
@@ -31,7 +63,6 @@ class BinaryManageService extends BinaryDataService
     {
         //reset db, remove all except root element
         $this->clearData();
-        //TODO::it is can be done with interface
         $this->addLeftBranch(1, 1, 2, $level);
         $this->addRightBranch(1, 2, 2, $level);
     }

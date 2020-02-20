@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59721999-6ba8-40fa-9408-e6ac88a8215b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Services/BinaryOutputService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/BinaryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/BinaryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/BinaryManageService.php" afterPath="$PROJECT_DIR$/app/Services/BinaryManageService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/binaries/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/binaries/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Repositories/BinaryRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/BinaryRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/translations.php" afterPath="$PROJECT_DIR$/resources/lang/en/translations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path="binary_tree.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,13 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BinaryController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BinaryController.php">
+      <file leaf-file-name="web.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="64" selection-start="698" selection-end="698" vertical-scroll-proportion="-9.807693" vertical-offset="68" max-vertical-offset="2040">
-              <folding>
-                <marker date="1582181498408" expanded="false" signature="40:218" placeholder="..." />
-              </folding>
+            <state line="19" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="374">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,35 +41,28 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="19" selection-start="805" selection-end="805" vertical-scroll-proportion="0.8728606" vertical-offset="119" max-vertical-offset="578">
+            <state line="42" column="21" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.6259169" vertical-offset="458" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryOutputService.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/BinaryOutputService.php">
+      <file leaf-file-name="translations.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/en/translations.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="29" selection-start="387" selection-end="387" vertical-scroll-proportion="-7.8461537" vertical-offset="85" max-vertical-offset="1088">
+            <state line="12" column="29" selection-start="377" selection-end="377" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/BinaryRepository.php">
+      <file leaf-file-name="BinaryController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BinaryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="59" selection-start="2039" selection-end="2039" vertical-scroll-proportion="-5.4615383" vertical-offset="1626" max-vertical-offset="2193">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinaryDataService.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/BinaryDataService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="23" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1343">
-              <folding />
+            <state line="28" column="106" selection-start="1142" selection-end="1152" vertical-scroll-proportion="-4.3137255" vertical-offset="256" max-vertical-offset="2312">
+              <folding>
+                <element signature="e#40#77#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,7 +70,7 @@
       <file leaf-file-name="BinaryManageService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Services/BinaryManageService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="5" selection-start="707" selection-end="707" vertical-scroll-proportion="-12.461538" vertical-offset="203" max-vertical-offset="3009">
+            <state line="40" column="20" selection-start="729" selection-end="729" vertical-scroll-proportion="-7.1923075" vertical-offset="408" max-vertical-offset="3536">
               <folding />
             </state>
           </provider>
@@ -103,13 +94,13 @@
         <option value="$PROJECT_DIR$/app/Repositories/BInaryRepository.php" />
         <option value="$PROJECT_DIR$/app/Binary.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_02_18_173445_create_binaries_table.php" />
-        <option value="$PROJECT_DIR$/app/Services/BinaryStoreService.php" />
         <option value="$PROJECT_DIR$/app/Services/BinaryDataService.php" />
-        <option value="$PROJECT_DIR$/resources/lang/en/translations.php" />
+        <option value="$PROJECT_DIR$/app/Services/BinaryOutputService.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Services/BinaryStoreService.php" />
         <option value="$PROJECT_DIR$/app/Repositories/BinaryRepository.php" />
         <option value="$PROJECT_DIR$/app/Services/BinaryManageService.php" />
-        <option value="$PROJECT_DIR$/app/Services/BinaryOutputService.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/translations.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BinaryController.php" />
         <option value="$PROJECT_DIR$/resources/views/binaries/index.blade.php" />
       </list>
@@ -148,7 +139,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,6 +209,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,14 +265,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24918567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24673203" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13519637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13519637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -317,7 +308,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="39" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="2244">
           <folding>
-            <marker date="1582181498408" expanded="false" signature="40:218" placeholder="..." />
+            <element signature="e#40#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -352,7 +343,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="79" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493" />
+        <state line="22" column="79" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
@@ -364,14 +357,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/en/translations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289" />
+        <state line="9" column="32" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BinaryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="34" selection-start="692" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="2074">
           <folding>
-            <marker date="1582181498408" expanded="false" signature="40:218" placeholder="..." />
+            <element signature="e#40#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -399,7 +394,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459" />
+        <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
@@ -413,7 +410,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="45" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1870">
           <folding>
-            <marker date="1582181498408" expanded="false" signature="40:218" placeholder="..." />
+            <element signature="e#40#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -441,7 +438,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459" />
+        <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
@@ -455,7 +454,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="40" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1870">
           <folding>
-            <marker date="1582181498408" expanded="false" signature="40:218" placeholder="..." />
+            <element signature="e#40#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -485,14 +484,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="40" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
           <folding>
-            <marker date="1582181498408" expanded="false" signature="40:218" placeholder="..." />
+            <element signature="e#40#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459" />
+        <state line="20" column="65" selection-start="635" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="459">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
@@ -543,44 +544,6 @@
         <state line="8" column="66" selection-start="159" selection-end="159" vertical-scroll-proportion="0.33415234" vertical-offset="0" max-vertical-offset="407" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/BinaryStoreService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="33" selection-start="351" selection-end="351" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/translations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="79" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/BinaryDataService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="23" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/BinaryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="59" selection-start="2039" selection-end="2039" vertical-scroll-proportion="-5.4615383" vertical-offset="1626" max-vertical-offset="2193">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/BinaryManageService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="707" selection-end="707" vertical-scroll-proportion="-12.461538" vertical-offset="203" max-vertical-offset="3009">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/BinaryOutputService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="29" selection-start="387" selection-end="387" vertical-scroll-proportion="-7.8461537" vertical-offset="85" max-vertical-offset="1088">
@@ -588,18 +551,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryDataService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="46" selection-start="376" selection-end="376" vertical-scroll-proportion="-12.384615" vertical-offset="18" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/BinaryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="70" selection-start="2725" selection-end="2725" vertical-scroll-proportion="0.8425926" vertical-offset="1999" max-vertical-offset="2499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryStoreService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="379" selection-end="379" vertical-scroll-proportion="0.4699074" vertical-offset="103" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/BinaryManageService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="20" selection-start="729" selection-end="729" vertical-scroll-proportion="-7.1923075" vertical-offset="408" max-vertical-offset="3553">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/translations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="29" selection-start="377" selection-end="377" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BinaryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="64" selection-start="698" selection-end="698" vertical-scroll-proportion="-9.807693" vertical-offset="68" max-vertical-offset="2040">
+        <state line="28" column="106" selection-start="1142" selection-end="1152" vertical-scroll-proportion="-4.3137255" vertical-offset="256" max-vertical-offset="2312">
           <folding>
-            <marker date="1582181498408" expanded="false" signature="40:218" placeholder="..." />
+            <element signature="e#40#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="19" selection-start="805" selection-end="805" vertical-scroll-proportion="0.8728606" vertical-offset="119" max-vertical-offset="578">
+        <state line="42" column="21" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.6259169" vertical-offset="458" max-vertical-offset="867">
           <folding />
         </state>
       </provider>

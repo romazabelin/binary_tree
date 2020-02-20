@@ -7,6 +7,7 @@ use App\Services\BinaryOutputService;
 use App\Services\BinaryStoreService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\Session;
 
 class BinaryController extends Controller
 {
@@ -17,11 +18,22 @@ class BinaryController extends Controller
      */
     public function index()
     {
-        $bla       = new BinaryOutputService();
-        $tree      = $bla->outputBinaryTree(1);//get binary tree structure
-        $parentIds = (new BinaryStoreService())->getParentIds();//get parent ids to add for him new items
+        $binaryManageService = new BinaryManageService();
+        $binaryOutputService = new BinaryOutputService();
+        $tree                = $binaryOutputService->outputBinaryTree(1);//get binary tree structure
+        $parentIds           = (new BinaryStoreService())->getParentIds();//get parent ids to add for him new items
+        $bothSideId          = Session::get('both_side_id') ?? 0;
+        $underItems          = $binaryManageService->getUnderBinaries($bothSideId);//get under items
+        $aboveItems          = $binaryManageService->getAboveBinaries($bothSideId);//get above items
 
-        return view('binaries.index', compact('parentIds', 'tree'));
+        return view('binaries.index', compact('parentIds', 'tree', 'underItems', 'aboveItems', 'bothSideId'));
+    }
+
+    public function getItems(Request $request)
+    {
+        $input = $request->all();
+
+        return redirect()->route('binary.index')->with(['both_side_id' => $input['id']]);
     }
 
     /**

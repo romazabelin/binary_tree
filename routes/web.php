@@ -21,3 +21,5 @@ Route::get('/', ['uses' => 'BinaryController@index']);
 Route::get('/fill', ['uses' => 'BinaryController@fill', 'as' => 'binary.fill']);
 
 Route::get('/reset', ['uses' => 'BinaryController@reset', 'as' => 'binary.reset']);
+
+Route::post('/get-items', ['uses' => 'BinaryController@getItems', 'as' => 'binary.get_items']);

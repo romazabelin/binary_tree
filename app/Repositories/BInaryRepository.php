@@ -126,4 +126,22 @@ class BinaryRepository
     {
         Binary::where('id', '<>', '1')->delete();
     }
+
+    /**
+     * @param int $level
+     * @return mixed
+     */
+    public function getAboveLevel(int $level)
+    {
+        return Binary::where('level', '>' , $level)->pluck('id', 'id')->toArray();
+    }
+
+    /**
+     * @param int $level
+     * @return mixed
+     */
+    public function getUnderLevel(int $level)
+    {
+        return Binary::where('level', '<' , $level)->pluck('id', 'id')->toArray();
+    }
 } 

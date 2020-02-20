@@ -27,3 +27,20 @@
     {!! $tree !!}
 </div>
 {{ Form::close() }}
+
+{{ Form::open(['url' => route('binary.get_items'), 'class' => 'form-horizontal', 'method'=>'POST']) }}
+{{ Form::select('id', $parentIds, $bothSideId) }}
+{{ Form::submit(trans('translations.form.get')) }}
+<div>
+    {{ trans('translations.form.under') }}:
+    @foreach($underItems as $underItem)
+    {{ $underItem }};
+    @endforeach
+</div>
+<div>
+    {{ trans('translations.form.above') }}:
+    @foreach($aboveItems as $aboveItem)
+    {{ $aboveItem }};
+    @endforeach
+</div>
+{{ Form::close() }}

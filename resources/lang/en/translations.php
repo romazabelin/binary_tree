@@ -7,6 +7,9 @@ return [
         'success'   => 'Success',
         'exists'    => 'Already exists',
         'fill'      => 'Fill binary tree',
-        'reset'     => 'Reset DB'
+        'reset'     => 'Reset DB',
+        'get'       => 'Get',
+        'above'     => 'Above',
+        'under'     => 'Under'
     ]
 ];
