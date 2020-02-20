@@ -102,6 +102,15 @@ class BinaryRepository
     }
 
     /**
+     * @param int $parentId
+     * @return mixed
+     */
+    public function getByParent(int $parentId)
+    {
+        return Binary::where('parent_id', $parentId)->get();
+    }
+
+    /**
      * @return int
      */
     public function getTotalCount()

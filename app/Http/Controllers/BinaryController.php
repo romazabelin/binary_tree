@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\BinaryManageService;
+use App\Services\BinaryOutputService;
 use App\Services\BinaryStoreService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Lang;
@@ -16,9 +17,11 @@ class BinaryController extends Controller
      */
     public function index()
     {
-        $parentIds = (new BinaryStoreService())->getParentIds();
+        $bla       = new BinaryOutputService();
+        $tree      = $bla->outputBinaryTree(1);//get binary tree structure
+        $parentIds = (new BinaryStoreService())->getParentIds();//get parent ids to add for him new items
 
-        return view('binaries.index', compact('parentIds'));
+        return view('binaries.index', compact('parentIds', 'tree'));
     }
 
     /**

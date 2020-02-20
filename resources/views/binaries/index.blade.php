@@ -1,5 +1,4 @@
 {{ Form::open(['url' => route('binary.store'), 'class' => 'form-horizontal', 'method'=>'POST', 'enctype'=>'multipart/form-data']) }}
-
 <div>
     {{ trans('translations.form.parent_id') }}
     {{ Form::select('parent_id', $parentIds) }}
@@ -23,5 +22,8 @@
 </div>
 <div>
     {{ Html::link(route('binary.reset'), trans('translations.form.reset')) }}
+</div>
+<div>
+    {!! $tree !!}
 </div>
 {{ Form::close() }}
