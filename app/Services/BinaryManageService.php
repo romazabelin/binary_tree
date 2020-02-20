@@ -9,17 +9,18 @@
 namespace App\Services;
 
 
+use App\Interfaces\BinaryBranch;
+use App\Interfaces\BinarySide;
 use App\Repositories\BinaryRepository;
 
-class BinaryManageService extends BinaryDataService
+class BinaryManageService extends BinaryDataService implements BinarySide, BinaryBranch
 {
     /**
      * get above binaries by level
      *
-     * @param int $id
      * @return mixed
      */
-    public function getAboveBinaries(int $id)
+    public function getAboveBinaries($id)
     {
         if (!$id)
             return [];
@@ -32,10 +33,9 @@ class BinaryManageService extends BinaryDataService
     /**
      * get under binaries by level
      *
-     * @param int $id
      * @return mixed
      */
-    public function getUnderBinaries(int $id)
+    public function getUnderBinaries($id)
     {
         if (!$id)
             return [];
@@ -75,7 +75,7 @@ class BinaryManageService extends BinaryDataService
      * @param int $currentLevel
      * @param int $expectedLevel
      */
-    protected function addLeftBranch(int $parentId, int $position, int $currentLevel, int $expectedLevel)
+    public  function addLeftBranch($parentId, $position, $currentLevel, $expectedLevel)
     {
         //except 0 parent id and do not start right branch
         if ($parentId && !($parentId == 1 && $position == 2) && ($parentId != 1 || ($parentId == 1 && !$this->binaryRepository->check($parentId, 1)))) {
@@ -125,7 +125,7 @@ class BinaryManageService extends BinaryDataService
      * @param int $currentLevel
      * @param int $expectedLevel
      */
-    protected function addRightBranch(int $parentId, int $position, int $currentLevel, $expectedLevel)
+    public  function addRightBranch($parentId, $position, $currentLevel, $expectedLevel)
     {
         //except 0 parent id and do not start left branch
         if ($parentId && !($parentId == 1 && $position == 1) && ($parentId != 1 || ($parentId == 1 && !$this->binaryRepository->check($parentId, 2)))) {
@@ -205,4 +205,4 @@ class BinaryManageService extends BinaryDataService
 //            $currentLevel++;
 //        }
 //    }
-} 
+}
