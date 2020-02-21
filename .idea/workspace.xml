@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59721999-6ba8-40fa-9408-e6ac88a8215b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/vendor/datatables/media/sort_asc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/vendor/datatables/media/sort_asc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/vendor/datatables/media/sort_both.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/vendor/datatables/media/sort_desc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/vendor/datatables/media/sort_desc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/mix-manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/app.js" afterPath="$PROJECT_DIR$/resources/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/app.scss" afterPath="$PROJECT_DIR$/resources/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/binaries/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/binaries/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/translations.php" afterPath="$PROJECT_DIR$/resources/lang/en/translations.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="binary_tree.iws" />
@@ -60,7 +47,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="28" selection-start="939" selection-end="939" vertical-scroll-proportion="0.44444445" vertical-offset="204" max-vertical-offset="1122">
+            <state line="20" column="28" selection-start="939" selection-end="939" vertical-scroll-proportion="0.6111111" vertical-offset="153" max-vertical-offset="1122">
               <folding />
             </state>
           </provider>
@@ -656,7 +643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/binaries/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="939" selection-end="939" vertical-scroll-proportion="0.44444445" vertical-offset="204" max-vertical-offset="1122">
+        <state line="20" column="28" selection-start="939" selection-end="939" vertical-scroll-proportion="0.6111111" vertical-offset="153" max-vertical-offset="1122">
           <folding />
         </state>
       </provider>
