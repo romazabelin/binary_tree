@@ -8,7 +8,7 @@ return [
         'exists'    => 'Already exists',
         'fill'      => 'Fill binary tree',
         'reset'     => 'Reset DB',
-        'get'       => 'Get',
+        'get'       => 'Get above and under items',
         'above'     => 'Above',
         'under'     => 'Under'
     ]
